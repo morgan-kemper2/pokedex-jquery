@@ -1,0 +1,21 @@
+body {
+  font-family: 'impact';
+  font-weight: 400;
+  font-size: 50px;
+  /* sets the font size to 50px */
+  line-height: 1.6;
+  /* sets the line-height to 1.6 */
+  text-align: center;
+}
+.picture {
+  text-align: center;
+  width: 80%;
+}
+
+
+@media all and (max-width: 500px) {
+  body {
+    font-size: 30px;
+    text-align: center;
+  }
+}
