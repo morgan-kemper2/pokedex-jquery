@@ -6,7 +6,45 @@ body {
   line-height: 1.6;
   /* sets the line-height to 1.6 */
   text-align: center;
+  text-transform: capitalize;
 }
+
+#modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
+  position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height 100%;
+  background: lightgray;
+  z-index: 999;
+  overflow: auto;
+  display: grid;
+  text-align: center;
+}
+
+.modal {
+  float: right;
+  border: 0;
+  background: none;
+  color: black;
+  text-transform: capitalize;
+
+}
+
+.modal h1{
+  margin-top: 0;
+}
+
+.modal p {
+  margin-bottom: 0;
+}
+
 .picture {
   text-align: center;
   width: 80%;
@@ -31,7 +69,8 @@ body {
   border-bottom: 2px solid;
   -webkit-transition: 2s opacity;
   transition: 2s opacity;
-  margin: 25px;
+  margin: 15px;
+  text-transform: capitalize;
 }
 button:hover,
 button:focus,
