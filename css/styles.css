@@ -8,13 +8,6 @@ body {
   text-transform: capitalize;
 }
 
-#navbarNav {
-  color: black;
-}
-.nav-link {
-  color: gray;
-}
-
 .navbar {
   background-color: #9f23c5;
   color: white;
