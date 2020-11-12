@@ -7,6 +7,10 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
+
+#navbarNav {
+  color: black;
+}
 .nav-link {
   color: gray;
 }
@@ -33,7 +37,7 @@ body {
   width: 80%;
 }
 
-.btnclass {
+/* .btnclass {
   border: none;
   font-size: 50px;
   display: inline-block;
@@ -54,7 +58,7 @@ button:focus,
 btnclass {
   cursor: pointer;
   opacity: 0.6;
-}
+} */
 .list-i {
   list-style-type: none;
 }
