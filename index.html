@@ -25,14 +25,52 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Search</a>
-            </li>
+              <input
+                type="text"
+                id="myInput"
+                onkeyup="search()"
+                placeholder="Search"
+                title="Type in a name"
+                /> 
+              </li>
           </ul>
         </div>
       </nav>
       <img src="img/img1.svg.png" alt="logo" class="picture">
     </header>
-    <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog"
+    <div
+      class="modal fade"
+      id="pokemonModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: #eae6dd">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn"
+              style="background-color: #8b6d6c; color: #eae6dd"
+              data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog"
       aria-labelledby="pokemonModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -53,8 +91,11 @@
           </div>
         </div>
       </div>
-    </div>
-    <ul class="pokelist"></ul>
+    </div> -->
+    <div
+      id="myrow"
+      class="pokemon-list row d-flex justify-content-center flex-wrap"></div>
+    <!-- <ul class="pokelist"></ul> -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>

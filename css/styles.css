@@ -11,6 +11,22 @@ body {
   color: gray;
 }
 
+.navbar {
+  background-color: #9f23c5;
+  color: white;
+}
+
+.card {
+  background-color: #eae6dd;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  /* background-color: #eae6dd; */
+}
+
 .picture {
   margin-top: 150px;
   text-align: center;
