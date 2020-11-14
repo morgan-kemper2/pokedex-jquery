@@ -44,22 +44,9 @@ let pokemonRepository = (function () {
       });
     });
   }
-  // function addListItem(pokemon) {
-  //   let pokeItem = $('.pokelist');
-  //   let listItem = $('<li class = "list-i"></li>');
-  //   let button = $('<button class = "btnclass">'+ pokemon.name +'</button>');
-  //   button.attr("data-toggle", "modal");
-  //   button.attr("data-target", "#pokemonModal");
-  //   listItem.append(button);
-  //   pokeItem.append(listItem);
-  //   button.on('click', function(){
-  //     showDetails(pokemon);
-  //   });
-  // }
 
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
-      // console.log(pokemon);
       showModal(pokemon);
     });
   }
@@ -112,10 +99,7 @@ let pokemonRepository = (function () {
       '<img class="modal-img" alt="..." style="width: 50%; padding: 30px;">'
     );
     imageFront.attr("src", item.imageUrl);
-    // let imageBack = $(
-    //   '<img class="modal-img" alt="..." style="width: 35%; padding: 30px;">'
-    // );
-    // imageBack.attr("src", item.imageUrlBack);
+  
     let modalProfile = $(
       '<h4 style="background-color:#d88780; padding: 5px; color: white;">Profile</h4>'
     );
@@ -133,7 +117,6 @@ let pokemonRepository = (function () {
 
     modalTitle.append(pokemonName);
     modalBody.append(imageFront);
-    // modalBody.append(imageBack);
     modalBody.append(modalProfile);
     modalBody.append(pokemonHeight);
     modalBody.append(pokemonTypes);
@@ -167,28 +150,6 @@ let pokemonRepository = (function () {
     }
   }
 
-  // function showModal(pokemon) {
-  //   let modalTitle = $(".modal-title");
-  //   let modalBody = $(".modal-body");
-  //   modalTitle.empty();
-  //   modalBody.empty();
-
-  //   let nameElement = $("<h1>" + pokemon.name + "</h1>");
-  //   let imageElement = $('<img></img>');
-  //   imageElement.attr("src", pokemon.imageUrl);
-  //   let heightElement = $("<p>" + "Height: " + pokemon.height + "</p>");
-  //   let weightElement = $("<p>" + "Weight: " + pokemon.weight + "</p>");
-  //   let typeElement = $("<p>" + "Type: " + pokemon.types + "</p>");
-  //   let abilityElement = $("<p>" + "Abilities: " + pokemon.abilities + "</p>")
-
-  //   modalTitle.append(nameElement);
-  //   modalBody.append(imageElement);
-  //   modalBody.append(heightElement);
-  //   modalBody.append(weightElement);
-  //   modalBody.append(typeElement);
-  //   modalBody.append(abilityElement);
-  // }
-
 return {
   getAll: getAll,
   add: add,
@@ -200,7 +161,6 @@ return {
 }
 })();
 
-// console.log(pokemonRepository.getAll());
 
 pokemonRepository.loadList().then(function() {
   pokemonRepository.getAll().forEach(function(pokemon){
@@ -213,19 +173,28 @@ function search() {
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
   row= document.getElementById("myrow");
-  // card = rowgetElementsByTagName("");
   card = row.querySelectorAll(".card");
-  // console.log(card);
-  // console.log(card[0].querySelector(".card-body").querySelector(".card-title"));
   for (i = 0; i < card.length; i++) {
-    // a = card[i].getElementsByTagName("a")[0];
     a = card[i].querySelector(".card-body").querySelector(".card-title");
-    // console.log(a.innerText);
     txtValue = a.textContent || a.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       card[i].style.display = "";
     } else {
       card[i].style.display = "none";
+
     }
   }
 } 
+
+{
+  "env"; {
+      "es6"; true,
+      "browser"; true
+  }
+  "extends"; [
+      "eslint:recommended"
+  ],
+  "rules"; {
+      "quotes"; ["error", "single"]
+  }
+}

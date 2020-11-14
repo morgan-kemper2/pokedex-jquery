@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
   font-family: "impact";
   font-weight: 400;
@@ -30,38 +37,12 @@ body {
   width: 80%;
 }
 
-/* .btnclass {
-  border: none;
-  font-size: 50px;
-  display: inline-block;
-  font-family: inherit;
-  background-color: blue;
-  color: yellow;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid;
-  -webkit-transition: 2s opacity;
-  transition: 2s opacity;
-  margin: 15px;
-  text-transform: capitalize;
-}
-button:hover,
-button:focus,
-btnclass {
-  cursor: pointer;
-  opacity: 0.6;
-} */
 .list-i {
   list-style-type: none;
 }
 
 @media all and (max-width: 500px) {
   body {
-    font-size: 30px;
-    text-align: center;
-  }
-  .btnclass {
     font-size: 30px;
     text-align: center;
   }
