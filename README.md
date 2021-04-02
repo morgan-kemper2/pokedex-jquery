@@ -13,7 +13,7 @@
         View a list of items (pokemon)<br>
         On user action (clicking on a list item), view details for that item<br>
         <h2>Technical Requirements</h2>
-        This app loads data from <a href="https://pokeapi.co">Pokemon API</a><br>
+        This app loads data from the <a href="https://pokeapi.co">Pokemon API</a><br>
         App includes CSS styling<br>
         JavaScript code is formatted with ESLint rules using Prettier<br>
         App utilizes modals to display an item's details<br>
